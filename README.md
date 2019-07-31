@@ -33,11 +33,11 @@ Changes:
  
  
 ### Teensy 3.x Boards
-#### All 3.x boards
- - Able to set PWM frequency and Resolution, for more information [link](https://www.pjrc.com/teensy/td_pulse.html)
- - At least one DAC
- - Trigger Pin: 5
- - handy: Pinouts page [https://www.pjrc.com/teensy/pinout.html]
+* All 3.x boards
+  - Able to set PWM frequency and Resolution, for more information [link](https://www.pjrc.com/teensy/td_pulse.html)
+  - At least one DAC
+  - Trigger Pin: 5
+  - handy: Pinouts page [https://www.pjrc.com/teensy/pinout.html]
  
 * Teensy 3.1 & 3.2
   - Seems to work fine, but more testing is needed
