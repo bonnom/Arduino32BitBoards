@@ -25,10 +25,11 @@ Changes:
   - Able to set PWM frequency and Resolution    
   - KEEP IN MIND: NOT 5V TOLERANT!!
   
-* Feather M4
+* Featherboards M4
   - The ADC does not work at the moment because of DAC implementation
+  - Dual DAC
   - Trigger Pin: 5
-  - pin 8 is now pin 7
+  - pin 8 is now pin 6
   - For more detailed pin layout, see the firmware sketch
   - KEEP IN MIND: NOT 5V TOLERANT!!
  
