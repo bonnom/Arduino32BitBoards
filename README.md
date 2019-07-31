@@ -8,6 +8,7 @@ Changes:
 * Can do DAC/PWM blanking on all 8 channels
 * Changed unit of DAC/ PWM from "Volt" to "Power %" and the default scale to 0-100
 * Added three extra output channels to a total of 8
+* Channels 1 and 2 are by default the DAC channels
 
 ## Advantages of 32 Bit-boards in general
 * Much faster, because of higher clock speed and more is done per clockcycle.
@@ -26,10 +27,10 @@ Changes:
   - KEEP IN MIND: NOT 5V TOLERANT!!
   
 * Featherboards M4
+  - Baudrate 500 000
   - The ADC does not work at the moment because of DAC implementation
   - Dual DAC
   - Trigger Pin: 5
-  - pin 8 is now pin 6
   - For more detailed pin layout, see the firmware sketch
   - KEEP IN MIND: NOT 5V TOLERANT!!
  
@@ -47,8 +48,9 @@ Changes:
   - All other pins are the same as the original UNO firmware
 
 * Teensy 3.5
+  - Baudrate 500 000
   - All currently used pins in the firmware are 5V tolerant
-  - DAC1 on pin 21 and DAC2 on pin 22
+  - DAC1 on pin A21 and DAC2 on pin A22
   - Able to set PWM frequency and Resolution
 
 * Teensy 3.6
