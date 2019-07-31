@@ -81,9 +81,10 @@ Changes:
     - Channel 8: Pin 22
 
 * Teensy 3.5 **_(recommended)_** & Teensy 3.6
-  - Current PWM frequency: 14648.437 Hz
-  - Currently used pins are 5V tolerant for Teensy 3.5
+   - Currently used pins are 5V tolerant for Teensy 3.5
   - KEEP IN MIND: Teensy 3.6 is not 5V tolerant!!
+  - Current PWM frequency: 14648.437 Hz
+  - Pins used:
     - Trigger: Pin 2
     - Channel 1: Pin A21 (DAC)
     - Channel 2: Pin A22 (DAC)
