@@ -2,6 +2,8 @@
 This git contains a new Micro-Manager device adapter for Arduino 32-bits boards.
 This device adapter contains extra futures compared to the regular arduino device adapter.
 
+Currently the **Teensy 3.5** is the recommended board to be used with this device adapter
+
 Changes:
 * Added PWM control
 * Unified DAC and PWM
@@ -27,7 +29,8 @@ Changes:
 ### ESP32
 - Baudrate: 115200
 - ADC not implemented
-- Able to set PWM frequency and Resolution    
+- Able to set PWM frequency and Resolution
+- Low cost boards available
 - KEEP IN MIND: NOT 5V TOLERANT!!
 - Pins Used
   - Trigger: Pin 5
@@ -77,7 +80,7 @@ Changes:
     - Channel 7: Pin 21
     - Channel 8: Pin 22
 
-* Teensy 3.5 (recommended) & Teensy 3.6
+* Teensy 3.5 **_(recommended)_** & Teensy 3.6
   - Current PWM frequency: 14648.437 Hz
   - Currently used pins are 5V tolerant for Teensy 3.5
   - KEEP IN MIND: Teensy 3.6 is not 5V tolerant!!
