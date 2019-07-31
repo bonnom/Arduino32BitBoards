@@ -10,11 +10,18 @@ Changes:
 * Three extra output channels to a total of 8
 * Channels 1 and 2 are by default the DAC channels
 
-## Advantages of 32 Bit-boards in general
+## Advantages and Disadvantages of Arduino 32 Bit-boards in general
+### Advantages
 * Much faster, because of higher clock speed and more is done per clockcycle.
 * Baudrate increased to 500 000, nearly 9 times the transferspeed between Arduino and Micro-Manager (there are some exceptions). This can be even increased to 2 000 000
 * Most 32-bit Arduinos have a buildin DAC (max 3.3V output)
 * Higher PWM frequencies and PWM bitresolutions
+* More flexibility with pins used
+
+### Disadvantges
+* Most are not 5V tolerant, this means you'll need voltage level converter when using the triggerpin. It is recommended to use Teensy 3.5 since this board does have 5V tolerant inputs. When using a not 5V tolerant board it is recommended to use a voltage level converter like this one [link](https://www.adafruit.com/product/757) or this one [link](https://www.sparkfun.com/products/12009)
+* Library support might not always be great
+
 
 ## Working Arduino boards:
 ### ESP32
