@@ -12,6 +12,12 @@ Differences compared to regular Arduino Device Adapter:
 * Three extra output channels to a total of 8
 * Channels 1 and 2 are by default the DAC channels
 
+## Contents
+  - [Advantages and Disadvantages of Arduino 32 Bit-boards in general](advantages-and-disadvantages-of-Arduino-32-bit-boards-in-general)
+  - [Arduino boards information](#arduino-boards-information) contains settings and pinout
+  - [Installation](#installation)
+  - [Drivers](#drivers)
+  
 ## Advantages and Disadvantages of Arduino 32 Bit-boards in general
 ### Advantages
 * Much faster, because of higher clock speed and more is done per clockcycle.
@@ -25,7 +31,7 @@ Differences compared to regular Arduino Device Adapter:
 * Library support might not always be great
 
 
-## Working Arduino boards:
+## Arduino boards information:
 ### ESP32
 - Baudrate: 115200
 - ADC not implemented
@@ -94,3 +100,61 @@ Differences compared to regular Arduino Device Adapter:
     - Channel 6: Pin 6
     - Channel 7: Pin 7
     - Channel 8: Pin 8
+
+## Installation
+This page is an overview of the installation links for Arduino and the respective boards
+
+### Arduino (Required)
+Arduino offers two solutions, an online editor and a local Integrated development environment (IDE) program.
+It is recommended to use the local IDE software.
+The page for the software can be found [here](https://www.arduino.cc/en/Main/Software)
+
+### Adafruit
+Adafruit makes two programming environments to use on their 32-bit boards. One is circuit python and Arduino. Circuitpython currently doesn't work with micro-manager.
+Guide for installing the Adafruit Feather M4 board can be found [here](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/setup)
+
+### Esp32
+ESP32 arduino core installation link can be found [here](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+Also when using an windows version older than Windows 10 driver installation might be needed. There are two types of usb to serial chips used with each their own driver. If you are not sure what IC is used just install both drivers.
+
+These two are the most common type of drivers:
+* [SiLabs cp210x](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+* [CH340] (https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE)
+
+### Teensy boards
+Teensy requires its own installation software that can be downloaded [here](https://www.pjrc.com/teensy/td_download.html)
+
+## Drivers
+On windows 10 the Arduino-compatible board drivers are automatically installed, but this is not the case for windows 7 and below.
+
+There are two ways to install the Arduino-compatible board drivers, the first is to install the Arduino IDE and than the installing the board under boards-manager. The second way is to install the standalone driver packages. These are listed below.
+
+### Adafruit Serial Drivers:
+* Most general driver package
+* Includes drivers for FTDI
+* Includes SiLabs CP210x drivers
+
+[Adafruit Drivers](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/latest)
+
+[Source Drivers](https://learn.adafruit.com/adafruit-arduino-ide-setup/windows-driver-installation)
+
+### CH340G:
+* Used on a lot of Arduino-compatible boards from China
+
+[Windows Drivers](https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE)
+
+[Source Drivers](https://www.sparkfun.com/products/14050)
+
+### FTDI Drivers
+* Used on a lot of arduino-compatible boards (also included in the Adafruit Serial Driver package)
+(Drivers)[https://www.ftdichip.com/Drivers/VCP.htm]
+
+### SiLabs Drivers
+* Used on a lot of arduino-compatible boards (also included in the Adafruit Serial Driver package)
+
+(Drivers) [https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers]
+
+### Teensy Serial Drivers:
+[Windows Serial Installer](https://www.pjrc.com/teensy/serial_install.exe)
+
+[Source Drivers](https://www.pjrc.com/teensy/td_download.html)
