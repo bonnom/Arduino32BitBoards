@@ -54,6 +54,7 @@ Changes:
 * All 3.x boards
   - Able to set PWM frequency and Resolution, for more information [link](https://www.pjrc.com/teensy/td_pulse.html)
   - handy: Pinouts page [https://www.pjrc.com/teensy/pinout.html]
+  - Baudrate 500 000
  
 * Teensy 3.1 & 3.2 (Please use 96Mhz)
   - All currently used pins in the sketch are 5V tolerant
@@ -70,7 +71,6 @@ Changes:
     - Channel 8: Pin 22
 
 * Teensy 3.5 (recommended) & Teensy 3.6
-  - Baudrate 500 000
   - Current PWM frequency: 14648.437 Hz
   - Currently used pins are 5V tolerant for Teensy 3.5
   - KEEP IN MIND: Teensy 3.6 is not 5V tolerant!!
