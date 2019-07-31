@@ -4,7 +4,7 @@ This device adapter contains extra futures compared to the regular arduino devic
 
 Currently the **Teensy 3.5** is the recommended board to be used with this device adapter
 
-Changes:
+Differences compared to regular Arduino Device Adapter:
 * Added PWM control
 * Unified DAC and PWM
 * Can do DAC/PWM blanking on all 8 channels
