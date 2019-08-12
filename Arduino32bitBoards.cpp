@@ -3,12 +3,23 @@
 // PROJECT:       Micro-Manager
 // SUBSYSTEM:     DeviceAdapters
 //-----------------------------------------------------------------------------
-// DESCRIPTION:   Arduino32 adapter.  Needs accompanying firmware
+// DESCRIPTION:   Adapter for Arduino 32bit boards
+//                Needs accompanying firmware to be installed on the board 
+//				  Available at https://github.com/bonnom/Arduino32BitBoards
+//                
+//                This device Adapter is a modded Arduino Device Adapter
+//
 // COPYRIGHT:     University of California, San Francisco, 2008
+//
 // LICENSE:       LGPL
-// 
-// AUTHOR:        Nico Stuurman, nico@cmp.ucsf.edu 11/09/2008
-//                automatic device detection by Karl Hoover
+//
+// AUTHOR:        Original Author Arduino Device Adapter:
+//				  Nico Stuurman, nico@cmp.ucsf.edu, 11/09/2008
+//
+//                Automatic device detection by Karl Hoover
+//				  
+//                Author 32-Bit-Boards adaptation: 
+//                Bonno Meddens, 30/07/2019
 //
 //
 
@@ -55,7 +66,7 @@ MMThreadLock CArduino32Hub::lock_;
 MODULE_API void InitializeModuleData()
 {
    RegisterDevice(g_DeviceNameArduino32Hub, MM::HubDevice, "Hub (required)");
-   RegisterDevice(g_DeviceNameArduino32Switch, MM::StateDevice, "Digital out 8-bit");
+   RegisterDevice(g_DeviceNameArduino32Switch, MM::StateDevice, "Switch on/off channels 1 to 8");
    RegisterDevice(g_DeviceNameArduino32Shutter, MM::ShutterDevice, "Shutter");
    RegisterDevice(g_DeviceNameArduino32Input, MM::GenericDevice, "ADC");
    RegisterDevice(g_DeviceNameArduino32DAPWM1, MM::SignalIODevice, "DAC/PWM channel 1");
@@ -442,8 +453,7 @@ CArduino32Switch::CArduino32Switch() :
 
    // parent ID display
    CreateHubIDProperty();
-
-}
+   }
 
 CArduino32Switch::~CArduino32Switch()
 {
@@ -1064,7 +1074,6 @@ CArduino32DA::CArduino32DA(int channel) :
 
    CPropertyAction* pAct = new CPropertyAction(this, &CArduino32DA::OnMaxVolt);
    CreateProperty("Power %", "100", MM::Float, false, pAct, true);
-   
    
    if (channel_ == 1)
    {
