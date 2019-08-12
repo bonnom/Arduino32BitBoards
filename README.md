@@ -5,7 +5,7 @@ This device adapter contains extra futures compared to the regular arduino devic
 Currently the Teensy 3.5 is the recommended board to be used with this device adapter, bur there is also firmware available for the teensy 3.2, ESP32 and feather M4.
 
 Differences compared to regular Arduino Device Adapter:
-* Added PWM control
+* Added Pulse-width modulation (PWM) control
 * Unified DAC and PWM
 * Can do DAC/PWM blanking on all 8 channels
 * Changed unit of DAC/ PWM from "Volt" to "Power %" and the default scale to 0-100
@@ -14,7 +14,7 @@ Differences compared to regular Arduino Device Adapter:
 
 ## Contents
   - [Advantages and Disadvantages of Arduino 32 Bit-boards in general](advantages-and-disadvantages-of-Arduino-32-bit-boards-in-general)
-  - [Arduino boards information](#arduino-boards-information) contains settings and pinout
+  - [Arduino boards information](#arduino-boards-information) contains settings and pinouts
   - [Installation](#installation)
   - [Drivers](#drivers)
   
