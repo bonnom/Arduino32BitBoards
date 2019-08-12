@@ -5,7 +5,7 @@ This device adapter contains extra futures compared to the regular arduino devic
 Currently the Teensy 3.5 is the recommended board to be used with this device adapter, bur there is also firmware available for the teensy 3.2, ESP32 and feather M4.
 
 Differences compared to regular Arduino Device Adapter:
-* Three extra output channels to a total of 8
+* Two extra output channels to a total of 8
 * Added Pulse-width modulation (PWM) control
 * Unified DAC and PWM
 * Unified digital-out channels and DAC/PWM channels, this allows DAC/PWM blanking on all 8 channels
