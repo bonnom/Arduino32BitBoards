@@ -102,7 +102,7 @@ Differences compared to regular Arduino Device Adapter:
     - Channel 7: Pin 7
     - Channel 8: Pin 8
  
- * Teensy 4.0
+* Teensy 4.0
   - KEEP IN MIND: not 5V tolerant!!
   - Very fast
   - Does not have a DAC
