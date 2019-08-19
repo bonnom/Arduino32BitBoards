@@ -40,14 +40,14 @@ Differences compared to regular Arduino Device Adapter:
 - KEEP IN MIND: NOT 5V TOLERANT!!
 - Pins Used
   - Trigger: Pin 5
-  - Channel 1: Pin 25 (DAC)
-  - Channel 2: Pin 26 (DAC)
-  - Channel 3: Pin 27
-  - Channel 4: Pin 15
-  - Channel 5: Pin 14
-  - Channel 6: Pin 4
-  - Channel 7: Pin 23
-  - Channel 8: Pin 19
+  - Channel 1: Pin 25  (DAC)
+  - Channel 2: Pin 26  (DAC)
+  - Channel 3: Pin 27  (PWM)
+  - Channel 4: Pin 15  (PWM)
+  - Channel 5: Pin 14  (PWM)
+  - Channel 6: Pin 4   (PWM)
+  - Channel 7: Pin 23  (PWM)
+  - Channel 8: Pin 19  (PWM)
   
 ### Featherboards M4
 - Baudrate 500 000
@@ -56,14 +56,14 @@ Differences compared to regular Arduino Device Adapter:
 - KEEP IN MIND: NOT 5V TOLERANT!!
 - Pins Used
   - Trigger: Pin 5
-  - Channel 1: Pin A0 (DAC)
-  - Channel 2: Pin A1 (DAC)
-  - Channel 3: Pin 6
-  - Channel 4: Pin 9
-  - Channel 5: Pin 10
-  - Channel 6: Pin 11
-  - Channel 7: Pin 12
-  - Channel 8: Pin 13
+  - Channel 1: Pin A0  (DAC)
+  - Channel 2: Pin A1  (DAC)
+  - Channel 3: Pin 6   (PWM)
+  - Channel 4: Pin 9   (PWM)
+  - Channel 5: Pin 10  (PWM)
+  - Channel 6: Pin 11  (PWM)
+  - Channel 7: Pin 12  (PWM)
+  - Channel 8: Pin 13  (PWM)
  
  
 ### Teensy 3.x and 4.0 Boards
@@ -79,13 +79,13 @@ Differences compared to regular Arduino Device Adapter:
   - Pins Used
     - Trigger: Pin 2
     - Channel 1: Pin A14 (DAC)
-    - Channel 2: Pin 20
-    - Channel 3: Pin 3
-    - Channel 4: Pin 4
-    - Channel 5: Pin 5
-    - Channel 6: Pin 6
-    - Channel 7: Pin 21
-    - Channel 8: Pin 22
+    - Channel 2: Pin 20  (PWM)
+    - Channel 3: Pin 3   (PWM)
+    - Channel 4: Pin 4   (PWM)
+    - Channel 5: Pin 5   (PWM)
+    - Channel 6: Pin 6   (PWM)
+    - Channel 7: Pin 21  (PWM)
+    - Channel 8: Pin 22  (PWM)
 
 * Teensy 3.5 **_(recommended)_** & Teensy 3.6
   - Currently used pins are 5V tolerant for Teensy 3.5
@@ -95,12 +95,12 @@ Differences compared to regular Arduino Device Adapter:
     - Trigger: Pin 2
     - Channel 1: Pin A21 (DAC)
     - Channel 2: Pin A22 (DAC)
-    - Channel 3: Pin 3
-    - Channel 4: Pin 4
-    - Channel 5: Pin 5
-    - Channel 6: Pin 6
-    - Channel 7: Pin 7
-    - Channel 8: Pin 8
+    - Channel 3: Pin 3   (PWM)
+    - Channel 4: Pin 4   (PWM)
+    - Channel 5: Pin 5   (PWM)
+    - Channel 6: Pin 6   (PWM)
+    - Channel 7: Pin 7   (PWM)
+    - Channel 8: Pin 8   (PWM)
  
 * Teensy 4.0
   - KEEP IN MIND: not 5V tolerant!!
@@ -109,14 +109,14 @@ Differences compared to regular Arduino Device Adapter:
   - Current PWM frequency: 468750 Hz (At 7-bits)
   - Pins used:
     - Trigger: Pin 8
-    - Channel 1: Pin 23 (PWM)
-    - Channel 2: Pin 15 (PWM)
-    - Channel 3: Pin 3  (PWM)
-    - Channel 4: Pin 4  (PWM)
-    - Channel 5: Pin 10 (PWM)
-    - Channel 6: Pin 9  (PWM)
-    - Channel 7: Pin 6  (PWM)
-    - Channel 8: Pin 5  (PWM)
+    - Channel 1: Pin 23  (PWM)
+    - Channel 2: Pin 15  (PWM)
+    - Channel 3: Pin 3   (PWM)
+    - Channel 4: Pin 4   (PWM)
+    - Channel 5: Pin 10  (PWM)
+    - Channel 6: Pin 9   (PWM)
+    - Channel 7: Pin 6   (PWM)
+    - Channel 8: Pin 5   (PWM)
   - Sketch has weird pinout because the firmware was written to be used with a Feather 3.x adapter board
   
 
