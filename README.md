@@ -1,6 +1,6 @@
 # Arduino32bitBoards device adapter
 This git contains a new Micro-Manager device adapter for Arduino 32-bits boards.
-This device adapter contains extra futures compared to the regular arduino device adapter.
+This device adapter contains extra features compared to the regular arduino device adapter.
 
 Currently the Teensy 3.5 is the recommended board to be used with this device adapter, bur there is also firmware available for the teensy 3.2, ESP32 and feather M4.
 
