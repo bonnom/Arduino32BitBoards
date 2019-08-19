@@ -26,7 +26,7 @@ Differences compared to regular Arduino Device Adapter:
 * Higher PWM frequencies and PWM bitresolutions
 * More flexibility with pins used
 
-### Disadvantges
+### Disadvantages
 * Most are not 5V tolerant, this means you'll need voltage level converter when using the triggerpin. It is recommended to use Teensy 3.5 since this board does have 5V tolerant inputs. When using a not 5V tolerant board it is recommended to use a voltage level converter like this one [link](https://www.adafruit.com/product/757) or this one [link](https://www.sparkfun.com/products/12009)
 * Library support might not always be great
 
@@ -66,7 +66,7 @@ Differences compared to regular Arduino Device Adapter:
   - Channel 8: Pin 13
  
  
-### Teensy 3.x Boards
+### Teensy 3.x and 4.0 Boards
 * All 3.x boards
   - Able to set PWM frequency and Resolution, for more information [link](https://www.pjrc.com/teensy/td_pulse.html)
   - handy: Pinouts page [https://www.pjrc.com/teensy/pinout.html]
@@ -74,6 +74,7 @@ Differences compared to regular Arduino Device Adapter:
  
 * Teensy 3.1 & 3.2 (Please use 96Mhz)
   - All currently used pins in the sketch are 5V tolerant
+  - Has one DAC on pin A14
   - Current PWM frequency: 11718.75 Hz
   - Pins Used
     - Trigger: Pin 2
@@ -87,7 +88,7 @@ Differences compared to regular Arduino Device Adapter:
     - Channel 8: Pin 22
 
 * Teensy 3.5 **_(recommended)_** & Teensy 3.6
-   - Currently used pins are 5V tolerant for Teensy 3.5
+  - Currently used pins are 5V tolerant for Teensy 3.5
   - KEEP IN MIND: Teensy 3.6 is not 5V tolerant!!
   - Current PWM frequency: 14648.437 Hz
   - Pins used:
@@ -100,6 +101,24 @@ Differences compared to regular Arduino Device Adapter:
     - Channel 6: Pin 6
     - Channel 7: Pin 7
     - Channel 8: Pin 8
+ 
+ * Teensy 4.0
+  - KEEP IN MIND: not 5V tolerant!!
+  - Very fast
+  - Does not have a DAC
+  - Current PWM frequency: 468750 Hz (At 7-bits)
+  - Pins used:
+    - Trigger: Pin 8
+    - Channel 1: Pin 23 (PWM)
+    - Channel 2: Pin 15 (PWM)
+    - Channel 3: Pin 3  (PWM)
+    - Channel 4: Pin 4  (PWM)
+    - Channel 5: Pin 10 (PWM)
+    - Channel 6: Pin 9  (PWM)
+    - Channel 7: Pin 6  (PWM)
+    - Channel 8: Pin 5  (PWM)
+  - Sketch has weird pinout because the firmware was written to be used with a Feather 3.x adapter board
+  
 
 ## Installation
 This page is an overview of the installation links for Arduino and the respective boards
