@@ -48,7 +48,7 @@ Differences compared to regular Arduino Device Adapter:
   - Channel 6: Pin 4   (PWM)
   - Channel 7: Pin 23  (PWM)
   - Channel 8: Pin 19  (PWM)
-  
+
 ### Featherboards M4
 - Baudrate 500 000
 - The ADC does not work at the moment because of DAC implementation
@@ -65,7 +65,23 @@ Differences compared to regular Arduino Device Adapter:
   - Channel 7: Pin 12  (PWM)
   - Channel 8: Pin 13  (PWM)
  
- 
+### Metro M4 Express
+- Traditional form factor
+- Baudrate 500 000
+- The ADC does not work at the moment because of DAC implementation
+- 12 bit PWM
+- KEEP IN MIND: NOT 5V TOLERANT!!
+- Pins Used
+  - Trigger: Pin 5
+  - Channel 1: Pin A0  (DAC)
+  - Channel 2: Pin A1  (DAC)
+  - Channel 3: Pin 8   (PWM)
+  - Channel 4: Pin 9   (PWM)
+  - Channel 5: Pin 10  (PWM)
+  - Channel 6: Pin 11  (PWM)
+  - Channel 7: Pin 12  (PWM)
+  - Channel 8: Pin 13  (PWM)
+
 ### Teensy 3.x and 4.0 Boards
 * All 3.x boards
   - Able to set PWM frequency and Resolution, for more information [link](https://www.pjrc.com/teensy/td_pulse.html)
