@@ -17,6 +17,7 @@ Differences compared to regular Arduino Device Adapter:
   - [Arduino boards information](#arduino-boards-information) contains settings and pinouts
   - [Installation](#installation)
   - [Drivers](#drivers)
+  - [Known bugs](#bugs)
   
 ## Advantages and Disadvantages of Arduino 32 Bit-boards in general
 ### Advantages
@@ -162,7 +163,7 @@ Teensy requires its own installation software that can be downloaded [here](http
 ## Drivers
 On windows 10 the Arduino-compatible board drivers are automatically installed, but this is not the case for windows 7 and below.
 
-There are two ways to install the Arduino-compatible board drivers, the first is to install the Arduino IDE and than the installing the board under boards-manager. The second way is to install the standalone driver packages. These are listed below.
+There are two ways to install the Arduino-compatible board drivers, the first is to install the Arduino IDE and than to install the board under boards-manager. The second way is to install the standalone driver packages. The standalone drivers are listed below.
 
 ### Adafruit Serial Drivers:
 * Most general driver package
@@ -193,3 +194,11 @@ There are two ways to install the Arduino-compatible board drivers, the first is
 [Windows Serial Installer](https://www.pjrc.com/teensy/serial_install.exe)
 
 [Source Drivers](https://www.pjrc.com/teensy/td_download.html)
+
+## Bugs
+When a bug isn't listed here, please report it under 'Issues' above.
+
+* Using different exposure times in multi-dimensional acquisition can lead to problems. It is not yet known if this is caused by Arduino or the Andor camera
+
+* The Arduino will behave slow and sporadic under multi-dimensional acquisition if not a channel has been selected first under 'Configuration settings' in the main micro-manager window.
+
