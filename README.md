@@ -1,3 +1,5 @@
+I orginally wrote this code for my bachelor project, so I might not currently work with micro-manager but for questions, feel free to ask under the "Issue section" of this repository.
+
 # Arduino32bitBoards device adapter
 This git contains a new Micro-Manager device adapter for Arduino 32-bits boards.
 This device adapter contains extra features compared to the regular arduino device adapter.
